@@ -1,0 +1,8 @@
+UPDATE mysql.user SET authentication_string=PASSWORD('020427') WHERE User='root';
+alter user 'root'@'localhost' identified by '020427'; 
+
+update mysql.user set authentication_string=password(‘020427’) where user=’root’;
+hX3seyQ7bK*e
+set password for username @localhost = password('020427');
+create DATABASE appdb；
+/usr/sbin/mysqld--verbose --help | grep -A 1 'Default options'

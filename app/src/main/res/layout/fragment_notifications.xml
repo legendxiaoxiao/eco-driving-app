@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_notifications"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.381">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/usr"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@drawable/round_border"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="16dp"
+                android:layout_marginBottom="10dp"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@drawable/round_border"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="16dp"
+                android:layout_marginBottom="10dp"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@drawable/round_border"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="16dp"
+                android:layout_marginBottom="10dp"
+                android:padding="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cityText"
+                    android:layout_width="261dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_border"
+                    android:autofillHints=""
+                    android:drawableStart="@drawable/ic_city"
+                    android:drawableEnd="@drawable/ic_star"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="16dp"
+                    android:ems="10"
+                    android:hint="最常开车城市"
+                    android:padding="16dp" />
+
+                <Button
+                    android:id="@+id/btnSelectCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:text="选择"
+                    app:layout_constraintTop_toBottomOf="parent" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/round_border"
+                android:drawableStart="@drawable/ic_age"
+                android:drawableEnd="@drawable/ic_star"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="驾龄"
+                android:padding="16dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/et_rgscity0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/car_brand"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/round_border"
+                android:drawableStart="@drawable/ic_car"
+                android:drawableEnd="@drawable/ic_star"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="最常用车品牌"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/et_rgscity0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/car_type"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/round_border"
+                android:drawableStart="@drawable/ic_car"
+                android:drawableEnd="@drawable/ic_star"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="车型"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/et_rgscity0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gasText"
+                    android:layout_width="222dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round_border"
+                    android:drawableStart="@drawable/ic_gas"
+                    android:drawableEnd="@drawable/ic_star"
+                    android:drawablePadding="16dp"
+                    android:hint="请选择汽车动力"
+                    android:padding="16dp" />
+
+                <Spinner
+                    android:id="@+id/gas"
+                    android:layout_width="140dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/goalText"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints=""
+                    android:background="@drawable/round_border"
+                    android:drawableStart="@drawable/ic_goal"
+                    android:drawableEnd="@drawable/ic_star"
+                    android:drawablePadding="16dp"
+                    android:ems="10"
+                    android:textSize="@dimen/font_14sp"
+                    android:hint="开车最常用目的"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_rgs"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.508"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.155" />
+
+                <Button
+                    android:id="@+id/goalBtn"
+                    android:layout_width="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="选择"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_bg"
+                android:text="提交"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.459"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLay" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/teal_200"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/logOutButton"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_bg"
+                android:text="退出登录"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.459"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
